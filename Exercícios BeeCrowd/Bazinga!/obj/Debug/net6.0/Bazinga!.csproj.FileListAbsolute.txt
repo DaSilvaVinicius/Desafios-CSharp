@@ -1,0 +1,15 @@
+C:\Users\USER\source\repos\Bazinga!\Bazinga!\obj\Debug\net6.0\Bazinga!.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\Bazinga!\Bazinga!\obj\Debug\net6.0\Bazinga!.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\Bazinga!\Bazinga!\obj\Debug\net6.0\Bazinga!.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\Bazinga!\Bazinga!\obj\Debug\net6.0\Bazinga!.AssemblyInfo.cs
+C:\Users\USER\source\repos\Bazinga!\Bazinga!\obj\Debug\net6.0\Bazinga!.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\Bazinga!\Bazinga!\bin\Debug\net6.0\Bazinga!.exe
+C:\Users\USER\source\repos\Bazinga!\Bazinga!\bin\Debug\net6.0\Bazinga!.deps.json
+C:\Users\USER\source\repos\Bazinga!\Bazinga!\bin\Debug\net6.0\Bazinga!.runtimeconfig.json
+C:\Users\USER\source\repos\Bazinga!\Bazinga!\bin\Debug\net6.0\Bazinga!.dll
+C:\Users\USER\source\repos\Bazinga!\Bazinga!\bin\Debug\net6.0\ref\Bazinga!.dll
+C:\Users\USER\source\repos\Bazinga!\Bazinga!\bin\Debug\net6.0\Bazinga!.pdb
+C:\Users\USER\source\repos\Bazinga!\Bazinga!\obj\Debug\net6.0\Bazinga!.dll
+C:\Users\USER\source\repos\Bazinga!\Bazinga!\obj\Debug\net6.0\ref\Bazinga!.dll
+C:\Users\USER\source\repos\Bazinga!\Bazinga!\obj\Debug\net6.0\Bazinga!.pdb
+C:\Users\USER\source\repos\Bazinga!\Bazinga!\obj\Debug\net6.0\Bazinga!.genruntimeconfig.cache
