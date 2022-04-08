@@ -1,0 +1,15 @@
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\Há Muito, Muito Tempo Atras\Há Muito, Muito Tempo Atras\bin\Debug\net6.0\Há Muito, Muito Tempo Atras.exe
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\Há Muito, Muito Tempo Atras\Há Muito, Muito Tempo Atras\bin\Debug\net6.0\Há Muito, Muito Tempo Atras.deps.json
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\Há Muito, Muito Tempo Atras\Há Muito, Muito Tempo Atras\bin\Debug\net6.0\Há Muito, Muito Tempo Atras.runtimeconfig.json
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\Há Muito, Muito Tempo Atras\Há Muito, Muito Tempo Atras\bin\Debug\net6.0\Há Muito, Muito Tempo Atras.dll
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\Há Muito, Muito Tempo Atras\Há Muito, Muito Tempo Atras\bin\Debug\net6.0\ref\Há Muito, Muito Tempo Atras.dll
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\Há Muito, Muito Tempo Atras\Há Muito, Muito Tempo Atras\bin\Debug\net6.0\Há Muito, Muito Tempo Atras.pdb
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\Há Muito, Muito Tempo Atras\Há Muito, Muito Tempo Atras\obj\Debug\net6.0\Há Muito, Muito Tempo Atras.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\Há Muito, Muito Tempo Atras\Há Muito, Muito Tempo Atras\obj\Debug\net6.0\Há Muito, Muito Tempo Atras.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\Há Muito, Muito Tempo Atras\Há Muito, Muito Tempo Atras\obj\Debug\net6.0\Há Muito, Muito Tempo Atras.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\Há Muito, Muito Tempo Atras\Há Muito, Muito Tempo Atras\obj\Debug\net6.0\Há Muito, Muito Tempo Atras.AssemblyInfo.cs
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\Há Muito, Muito Tempo Atras\Há Muito, Muito Tempo Atras\obj\Debug\net6.0\Há Muito, Muito Tempo Atras.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\Há Muito, Muito Tempo Atras\Há Muito, Muito Tempo Atras\obj\Debug\net6.0\Há Muito, Muito Tempo Atras.dll
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\Há Muito, Muito Tempo Atras\Há Muito, Muito Tempo Atras\obj\Debug\net6.0\ref\Há Muito, Muito Tempo Atras.dll
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\Há Muito, Muito Tempo Atras\Há Muito, Muito Tempo Atras\obj\Debug\net6.0\Há Muito, Muito Tempo Atras.pdb
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\Há Muito, Muito Tempo Atras\Há Muito, Muito Tempo Atras\obj\Debug\net6.0\Há Muito, Muito Tempo Atras.genruntimeconfig.cache
