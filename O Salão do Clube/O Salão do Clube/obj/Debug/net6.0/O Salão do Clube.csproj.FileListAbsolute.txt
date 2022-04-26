@@ -1,0 +1,15 @@
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\O Salão do Clube\O Salão do Clube\obj\Debug\net6.0\O Salão do Clube.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\O Salão do Clube\O Salão do Clube\obj\Debug\net6.0\O Salão do Clube.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\O Salão do Clube\O Salão do Clube\obj\Debug\net6.0\O Salão do Clube.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\O Salão do Clube\O Salão do Clube\obj\Debug\net6.0\O Salão do Clube.AssemblyInfo.cs
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\O Salão do Clube\O Salão do Clube\obj\Debug\net6.0\O Salão do Clube.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\O Salão do Clube\O Salão do Clube\bin\Debug\net6.0\O Salão do Clube.exe
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\O Salão do Clube\O Salão do Clube\bin\Debug\net6.0\O Salão do Clube.deps.json
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\O Salão do Clube\O Salão do Clube\bin\Debug\net6.0\O Salão do Clube.runtimeconfig.json
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\O Salão do Clube\O Salão do Clube\bin\Debug\net6.0\O Salão do Clube.dll
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\O Salão do Clube\O Salão do Clube\bin\Debug\net6.0\O Salão do Clube.pdb
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\O Salão do Clube\O Salão do Clube\obj\Debug\net6.0\O Salão do Clube.dll
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\O Salão do Clube\O Salão do Clube\obj\Debug\net6.0\refint\O Salão do Clube.dll
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\O Salão do Clube\O Salão do Clube\obj\Debug\net6.0\O Salão do Clube.pdb
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\O Salão do Clube\O Salão do Clube\obj\Debug\net6.0\O Salão do Clube.genruntimeconfig.cache
+C:\Users\USER\source\repos\GitHub\Desafios-CSharp\O Salão do Clube\O Salão do Clube\obj\Debug\net6.0\ref\O Salão do Clube.dll
