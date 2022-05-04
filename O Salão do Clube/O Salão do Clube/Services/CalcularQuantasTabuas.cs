@@ -25,11 +25,35 @@ namespace O_Salão_do_Clube.Services
 
         public void Conta()
         {
-            Tabua maiorTabua = listaDeTabuas.OrderByDescending(tabua => tabua.Comprimento)
-                .FirstOrDefault();
+            int tabuasUsadas = 0;
+            List<Tabua> tabuasNaoUsadas = new List<Tabua>(listaDeTabuas);
+            double larguraDoSalaoNaoPreenchido = Salao.Largura;
+            double ComprimentoDoSalaoNaoPreenchido = Salao.Comprimento;
             
-            if (maiorTabua.Comprimento == Salao.Comprimento || maiorTabua.Comprimento == Salao.Largura)
-                Console.WriteLine(maiorTabua.Comprimento);
+            while (larguraDoSalaoNaoPreenchido > 0)
+            {
+                Tabua maiorTabua = tabuasNaoUsadas.OrderByDescending(tabua => tabua.Comprimento).FirstOrDefault();
+
+                if (maiorTabua.Comprimento == Salao.Comprimento)
+                {
+                    larguraDoSalaoNaoPreenchido -= maiorTabua.Largura;
+                    tabuasUsadas++;
+                    tabuasNaoUsadas.Remove(maiorTabua);
+                }
+                else
+                {
+                    foreach (Tabua tabua in tabuasNaoUsadas)
+                    {
+                        if (maiorTabua.Comprimento + tabua.Comprimento == Salao.Comprimento)
+                        {
+                            larguraDoSalaoNaoPreenchido -= maiorTabua.Largura;
+                            tabuasUsadas += 2;
+                            tabuasNaoUsadas.Remove(tabua);
+                            tabuasNaoUsadas.Remove(maiorTabua);
+                        }
+                    }
+                }
+            }
         }
     }
 }

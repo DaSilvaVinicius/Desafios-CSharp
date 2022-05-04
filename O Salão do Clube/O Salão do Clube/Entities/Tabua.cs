@@ -2,12 +2,12 @@
 {
     internal class Tabua
     {
-        public int Largura { get; set; }
+        public double Largura { get; set; }
         public int Comprimento { get; set; }
 
         public Tabua(int larguraEmCM, int comprimentoEmM)
         {
-            Largura = larguraEmCM / 100;
+            Largura = (double)(larguraEmCM / 100.00);
             Comprimento = comprimentoEmM;
         }
     }
