@@ -1,15 +1,16 @@
-﻿using O_Salão_do_Clube.Entities;
+﻿using System;
+using O_Salão_do_Clube.Entities;
+using O_Salão_do_Clube.Services;
 
-int comprimentoDoSalão = 0;
-int larguradoSalão = 0;
-List<Tabua> listaDeTabuas = new List<Tabua>();
+CalcularQuantasTabuas calcular = new();
 do
 {
     string[] dimensoesDoSalao = Console.ReadLine().Split(' ');
-    comprimentoDoSalão = int.Parse(dimensoesDoSalao[0]);
-    larguradoSalão = int.Parse(dimensoesDoSalao[1]);
+    Salao.Comprimento = int.Parse(dimensoesDoSalao[0]);
+    Salao.Largura = int.Parse(dimensoesDoSalao[1]);
 
-    if (comprimentoDoSalão != 0 && larguradoSalão != 0)
+
+    if (Salao.Comprimento != 0 && Salao.Largura != 0)
     {
         int larguraDasTabuas = int.Parse(Console.ReadLine());
         int numDeTabuas = int.Parse(Console.ReadLine());
@@ -19,7 +20,11 @@ do
         {
             int comprimDaTabua = int.Parse(comprimentoDasTabuas[i]);
 
-            listaDeTabuas.Add(new Tabua(larguraDasTabuas, comprimDaTabua));
+            calcular.AddToList(new Tabua(larguraDasTabuas, comprimDaTabua));
         }
     }
-} while (comprimentoDoSalão != 0 || larguradoSalão != 0);
+
+    calcular.Conta();
+} while (Salao.Comprimento != 0 && Salao.Largura != 0);
+
+

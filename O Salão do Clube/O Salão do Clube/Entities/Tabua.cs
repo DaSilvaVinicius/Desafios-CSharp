@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace O_Salão_do_Clube.Entities
+﻿namespace O_Salão_do_Clube.Entities
 {
     internal class Tabua
     {
