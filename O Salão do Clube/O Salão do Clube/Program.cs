@@ -2,7 +2,7 @@
 using O_Salão_do_Clube.Entities;
 using O_Salão_do_Clube.Services;
 
-CalcularQuantasTabuas calcular = new();
+TabuasDoadas tabuasDoadas = new();
 do
 {
     string[] dimensoesDoSalao = Console.ReadLine().Split(' ');
@@ -20,11 +20,11 @@ do
         {
             int comprimDaTabua = int.Parse(comprimentoDasTabuas[i]);
 
-            calcular.AddToList(new Tabua(larguraDasTabuas, comprimDaTabua));
+            tabuasDoadas.AddToList(new Tabua(larguraDasTabuas, comprimDaTabua));
         }
     }
 
-    calcular.Conta();
+    tabuasDoadas.UtilizadasNaObra();
 } while (Salao.Comprimento != 0 && Salao.Largura != 0);
 
 
