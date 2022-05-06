@@ -36,25 +36,23 @@ namespace O_Salão_do_Clube.Services
                 if (maiorTabua.Comprimento == Salao.Comprimento)
                 {
                     larguraSalaoSemTabua -= maiorTabua.Largura;
-                    tabuasInstaladasVert++;
-                    tabuasNaoUsadas.Remove(maiorTabua);
+                    tabuasInstaladasVert++;                   
                 }
                 else 
                 {
+                    Tabua tabuaComplementar = null;
                     foreach (Tabua tabua in tabuasNaoUsadas)
-                    {
+                    {                     
                         if (maiorTabua.Comprimento + tabua.Comprimento == Salao.Comprimento)
                         {
                             larguraSalaoSemTabua -= maiorTabua.Largura;
                             tabuasInstaladasVert += 2;
-                            tabuasNaoUsadas.Remove(tabua);
-                            tabuasNaoUsadas.Remove(maiorTabua);
+                            tabuaComplementar = tabua;
                         }
                     }
-                    if (tabuasNaoUsadas.Contains(maiorTabua))
-                        tabuasNaoUsadas.Remove(maiorTabua);
+                    tabuasNaoUsadas.Remove(tabuaComplementar);
                 }
-
+                tabuasNaoUsadas.Remove(maiorTabua);
             }
 
             int tabuasInstaladasHoriz = 0;
@@ -68,27 +66,26 @@ namespace O_Salão_do_Clube.Services
                 if (maiorTabua.Comprimento == Salao.Largura)
                 {
                     ComprimentoSalalaoSemTabua -= maiorTabua.Largura;
-                    tabuasInstaladasHoriz++;
-                    tabuasNaoUsadas.Remove(maiorTabua);
+                    tabuasInstaladasHoriz++;                    
                 }
                 else
                 {
+                    Tabua tabuaComplementar = null;
                     foreach (Tabua tabua in tabuasNaoUsadas)
                     {
                         if (maiorTabua.Comprimento + tabua.Comprimento == Salao.Largura)
                         {
                             ComprimentoSalalaoSemTabua -= maiorTabua.Largura;
                             tabuasInstaladasHoriz += 2;
-                            tabuasNaoUsadas.Remove(tabua);
-                            tabuasNaoUsadas.Remove(maiorTabua);
+                            tabuaComplementar = tabua;
                         }
                     }
-                    if (tabuasNaoUsadas.Contains(maiorTabua))
-                        tabuasNaoUsadas.Remove(maiorTabua);
+                    tabuasNaoUsadas.Remove(tabuaComplementar);
                 }
+                tabuasNaoUsadas.Remove(maiorTabua);
             }
 
-            if (tabuasInstaladasVert > tabuasInstaladasHoriz)
+            if (tabuasInstaladasVert < tabuasInstaladasHoriz)
                 Console.WriteLine(tabuasInstaladasVert);
             else
                 Console.WriteLine(tabuasInstaladasHoriz);
