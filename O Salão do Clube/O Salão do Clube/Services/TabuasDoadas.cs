@@ -1,94 +1,79 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using O_Salão_do_Clube.Entities;
-
-
+﻿using O_Salão_do_Clube.Entities;
 
 namespace O_Salão_do_Clube.Services
 {
-    class TabuasDoadas
+    static class TabuasDoadas
     {
-        List<Tabua> listaDeTabuas = new();
-
-        public void AddToList(Tabua tabua)
+        public static void UtilizadasNaObra(List<Tabua> listaDeTabuas)
         {
-            listaDeTabuas.Add(tabua);
-        }
-
-        public void RemoveFromList(Tabua tabua)
-        {
-            listaDeTabuas.Remove(tabua);
-        }
-
-        public void UtilizadasNaObra()
-        {
-            int tabuasInstaladasVert = 0;
-            List<Tabua> tabuasNaoUsadas = new List<Tabua>(listaDeTabuas);
-            double larguraSalaoSemTabua = Salao.Largura;           
-
-            while (larguraSalaoSemTabua > 0 && tabuasNaoUsadas.Count > 0)
+            int tabuasInstaladasVertical = 0;
+            int tabuasInstaladasHorizontal = 0;
+            string direcao = "Vertical";
+            while (direcao != null)
             {
-                Tabua maiorTabua = tabuasNaoUsadas.OrderByDescending(tabua => tabua.Comprimento).FirstOrDefault();
+                int tabuasInstaladas = 0;
+                List<Tabua> tabuasNaoUsadas = new List<Tabua>(listaDeTabuas);
+                double areaSalaoSemTabua = Salao.Area;
 
-                if (maiorTabua.Comprimento == Salao.Comprimento)
-                {
-                    larguraSalaoSemTabua -= maiorTabua.Largura;
-                    tabuasInstaladasVert++;                   
-                }
-                else 
-                {
-                    Tabua tabuaComplementar = null;
-                    foreach (Tabua tabua in tabuasNaoUsadas)
-                    {                     
-                        if (maiorTabua.Comprimento + tabua.Comprimento == Salao.Comprimento)
-                        {
-                            larguraSalaoSemTabua -= maiorTabua.Largura;
-                            tabuasInstaladasVert += 2;
-                            tabuaComplementar = tabua;
-                        }
-                    }
-                    tabuasNaoUsadas.Remove(tabuaComplementar);
-                }
-                tabuasNaoUsadas.Remove(maiorTabua);
-            }
 
-            int tabuasInstaladasHoriz = 0;
-            tabuasNaoUsadas = new List<Tabua>(listaDeTabuas);
-            double ComprimentoSalalaoSemTabua = Salao.Comprimento;
-
-            while (ComprimentoSalalaoSemTabua > 0 && tabuasNaoUsadas.Count > 0)
-            {
-                Tabua maiorTabua = tabuasNaoUsadas.OrderByDescending(tabua => tabua.Comprimento).FirstOrDefault();
-
-                if (maiorTabua.Comprimento == Salao.Largura)
+                while (areaSalaoSemTabua > 0 && tabuasNaoUsadas.Count > 0)
                 {
-                    ComprimentoSalalaoSemTabua -= maiorTabua.Largura;
-                    tabuasInstaladasHoriz++;                    
-                }
-                else
-                {
-                    Tabua tabuaComplementar = null;
-                    foreach (Tabua tabua in tabuasNaoUsadas)
+                    Tabua maiorTabua = tabuasNaoUsadas.OrderByDescending(tabua => tabua.Comprimento).First();
+                    tabuasNaoUsadas.Remove(maiorTabua);
+
+                    if ((maiorTabua.Comprimento == Salao.Comprimento && direcao == "Vertical") || (maiorTabua.Comprimento == Salao.Largura && direcao == "Horizontal"))
                     {
-                        if (maiorTabua.Comprimento + tabua.Comprimento == Salao.Largura)
+                        areaSalaoSemTabua -= maiorTabua.Area;
+                        tabuasInstaladas++;
+                    }
+                    else
+                    {
+                        Tabua tabuaComplementar = tabuasNaoUsadas.FirstOrDefault(tabua => tabua.Comprimento + maiorTabua.Comprimento == Salao.Comprimento
+                        && direcao == "Vertical"
+                        || tabua.Comprimento + maiorTabua.Comprimento == Salao.Largura
+                        && direcao == "Horizontal");
+
+                        if (tabuaComplementar != null)
                         {
-                            ComprimentoSalalaoSemTabua -= maiorTabua.Largura;
-                            tabuasInstaladasHoriz += 2;
-                            tabuaComplementar = tabua;
+                            areaSalaoSemTabua -= (maiorTabua.Area + tabuaComplementar.Area);
+                            tabuasInstaladas += 2;
+                            tabuasNaoUsadas.Remove(tabuaComplementar);
                         }
                     }
-                    tabuasNaoUsadas.Remove(tabuaComplementar);
                 }
-                tabuasNaoUsadas.Remove(maiorTabua);
-            }
 
-            if (tabuasInstaladasVert < tabuasInstaladasHoriz)
-                Console.WriteLine(tabuasInstaladasVert);
+                if (direcao == "Vertical")
+                {
+                    if (areaSalaoSemTabua > 0)
+                        tabuasInstaladasVertical = 0;
+                    else
+                        tabuasInstaladasVertical = tabuasInstaladas;
+                    direcao = "Horizontal";
+                }
+                else if (direcao == "Horizontal")
+                {
+                    if (areaSalaoSemTabua > 0)
+                        tabuasInstaladasHorizontal = 0;
+                    else
+                        tabuasInstaladasHorizontal = tabuasInstaladas;
+                    direcao = null;
+                }
+            }
+           
+            if (0 < tabuasInstaladasVertical && tabuasInstaladasVertical < tabuasInstaladasHorizontal
+                || tabuasInstaladasHorizontal == 0 && tabuasInstaladasVertical > 0)
+            {
+                int menorUsoDeTabuas = tabuasInstaladasVertical;
+                Console.WriteLine(menorUsoDeTabuas);
+            }
+            else if (0 < tabuasInstaladasHorizontal && tabuasInstaladasHorizontal <= tabuasInstaladasVertical
+               || tabuasInstaladasVertical == 0 && tabuasInstaladasHorizontal > 0)
+            {
+                int menorUsoDeTabuas = tabuasInstaladasHorizontal;
+                Console.WriteLine(menorUsoDeTabuas);
+            }
             else
-                Console.WriteLine(tabuasInstaladasHoriz);
+                Console.WriteLine("Impossivel");
         }
     }
 }
