@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\source\\repos\\GitHub\\Desafios-CSharp\\Há Muito, Muito Tempo Atras\\Há Muito, Muito Tempo Atras\\Há Muito, Muito Tempo Atras.csproj": {}
+    "C:\\Users\\USER\\source\\repos\\GitHub\\Desafios-CSharp\\HaMuitoMuitoTempoAtras\\Há Muito, Muito Tempo Atras\\Há Muito, Muito Tempo Atras.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\source\\repos\\GitHub\\Desafios-CSharp\\Há Muito, Muito Tempo Atras\\Há Muito, Muito Tempo Atras\\Há Muito, Muito Tempo Atras.csproj": {
+    "C:\\Users\\USER\\source\\repos\\GitHub\\Desafios-CSharp\\HaMuitoMuitoTempoAtras\\Há Muito, Muito Tempo Atras\\Há Muito, Muito Tempo Atras.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\source\\repos\\GitHub\\Desafios-CSharp\\Há Muito, Muito Tempo Atras\\Há Muito, Muito Tempo Atras\\Há Muito, Muito Tempo Atras.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\source\\repos\\GitHub\\Desafios-CSharp\\HaMuitoMuitoTempoAtras\\Há Muito, Muito Tempo Atras\\Há Muito, Muito Tempo Atras.csproj",
         "projectName": "Há Muito, Muito Tempo Atras",
-        "projectPath": "C:\\Users\\USER\\source\\repos\\GitHub\\Desafios-CSharp\\Há Muito, Muito Tempo Atras\\Há Muito, Muito Tempo Atras\\Há Muito, Muito Tempo Atras.csproj",
+        "projectPath": "C:\\Users\\USER\\source\\repos\\GitHub\\Desafios-CSharp\\HaMuitoMuitoTempoAtras\\Há Muito, Muito Tempo Atras\\Há Muito, Muito Tempo Atras.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\source\\repos\\GitHub\\Desafios-CSharp\\Há Muito, Muito Tempo Atras\\Há Muito, Muito Tempo Atras\\obj\\",
+        "outputPath": "C:\\Users\\USER\\source\\repos\\GitHub\\Desafios-CSharp\\HaMuitoMuitoTempoAtras\\Há Muito, Muito Tempo Atras\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,4 +1,6 @@
-﻿namespace Há_Muito__Muito_Tempo_Atras.Entities
+﻿using Há_Muito__Muito_Tempo_Atras.Entities;
+
+namespace Há_Muito__Muito_Tempo_Atras.Services
 {
     static class ElapsedTime
     {
